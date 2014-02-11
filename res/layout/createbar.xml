@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff4444"
+    android:orientation="horizontal" >
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:showDividers="none" >
+
+    <Button
+        android:id="@+id/button1"
+        style="@drawable/btn_cab_done_holo_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_cab_done_holo_light"
+        android:onClick="quit"
+        android:text="Cancel"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/textView1"
+    android:layout_width="1dp"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:background="#FFFFFF" />
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:showDividers="none" >
+
+    <Button
+        android:id="@+id/button2"
+        style="@drawable/btn_cab_done_holo_light"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_cab_done_holo_light"
+        android:onClick="makemedduler"
+        android:text="Create"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+        android:title="Main">
+        <CheckBoxPreference 
+            android:title="Import to Calendar" 
+            android:defaultValue="true" 
+            android:summary="@string/importtocalon" 
+            android:key="calimport" 
+            android:icon="@drawable/calendar" 
+            android:summaryOff="Do not add appointments to my calendar"/>
+		<CheckBoxPreference 
+    		android:title="Save Offline QR" 
+  		  	android:summary="Save appointments onto \n/sdcard/Medduler" 
+  		  	android:defaultValue="true" 
+    		android:key="saveoff" 
+    		android:icon="@drawable/download" 
+    		android:summaryOff="Do not save appointments onto phone memory"/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Sharing">
+		<EditTextPreference 
+		    android:icon="@drawable/caregiver" 
+		    android:summary="Emails entered here will be invited to all appointments" 
+		    android:title="Caregiver Email List" 
+		    android:key="caregiv" 
+		    android:hint="me@email.com, me2@email.com" 
+		    android:negativeButtonText="Cancel" 
+		    android:dialogMessage="Add caregivers' emails to the list. Separate emails using commas. Leave blank to disable this function" 
+		    android:dialogTitle="Add Emails" 
+		    android:dialogIcon="@drawable/caregiver" 
+		    android:positiveButtonText="Confirm" />
+	</PreferenceCategory>
+	<PreferenceCategory 
+	    android:title="Download and Update">
+		<CheckBoxPreference 
+	    	android:key="wifidown" 
+	    	android:title="Download only on Wifi" 
+	    	android:summary="Do not download on a data connection" 
+	    	android:defaultValue="false" 
+	    	android:summaryOff="Download on any connection" 
+	    	android:icon="@drawable/download"/>
+	</PreferenceCategory>
+	<PreferenceCategory 
+	    android:title="Save">
+		<CheckBoxPreference 
+		    android:summary="Automatically replace duplicate existing files" 
+		    android:title="Replace duplicate files" 
+		    android:key="writeexists" 
+		    android:defaultValue="true" 
+		    android:summaryOff="Do not replace existing files"/>
+	</PreferenceCategory>
+	<PreferenceCategory 
+	    android:title="FTP Settings">
+		<EditTextPreference 
+		    android:title="Username" 
+		    android:maxLength="20" 
+		    android:summary="Username for downloading from FTP Servers" 
+		    android:key="usern" 
+		    android:negativeButtonText="Cancel" 
+		    android:positiveButtonText="Confirm" 
+		    android:dialogMessage="Leave blank if server does not require a username" 
+		    android:dialogTitle="Username" 
+		    android:defaultValue="medduler"/>
+		<EditTextPreference 
+		    android:title="Password" 
+		    android:maxLength="20" 
+		    android:inputType="textPassword" 
+		    android:summary="Password for downloading from FTP Servers" 
+		    android:key="passw" 
+		    android:negativeButtonText="Cancel" 
+		    android:positiveButtonText="Confirm" 
+		    android:dialogMessage="Leave blank if server does not require a password" 
+		    android:dialogTitle="Password" 
+		    android:defaultValue="medpass"/>
+		<EditTextPreference 
+		    android:title="Port Number" 
+		    android:summary="Connects to FTP Servers on this port. Do not change this value unless required" 
+		    android:hint="21" 
+		    android:maxLength="5" 
+		    android:key="portn" 
+		    android:gravity="center_horizontal" 
+		    android:numeric="integer" 
+		    android:defaultValue="21" 
+		    android:dialogTitle="Port Number" 
+		    android:negativeButtonText="Cancel" 
+		    android:positiveButtonText="Confirm" 
+		    android:dialogMessage="Port number should be between 1 - 65535. \nMost FTP servers use port 21." />
+	</PreferenceCategory>
+	
+</PreferenceScreen>

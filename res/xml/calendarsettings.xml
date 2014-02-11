@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference 
+        android:key="calimport" 
+        android:icon="@drawable/calendar" 
+        android:title="Import to Calendar" 
+        android:disableDependentsState="false" 
+        android:summaryOn="@string/importtocalon" 
+        android:summaryOff="This option must be enabled to edit settings below" 
+        android:defaultValue="true" 
+        android:order="1"/>
+    
+    <PreferenceCategory 
+        android:title="Settings" 
+        android:dependency="calimport" 
+        android:order="2">
+            
+    	<MultiSelectListPreference android:title="Notification" android:entries="@array/calreminderarr" android:entryValues="@array/calremarr" android:defaultValue="@array/caldefaultrem" android:key="remind" android:icon="@drawable/alarm" android:dependency="calimport" android:summary="Remind me before my apponitment" android:dialogIcon="@drawable/alarm" /><EditTextPreference 
+        	android:title="Duration"
+        	android:hint="0"
+        	android:summary="Duration of an appointment. Default value is 60" 
+        	android:dialogTitle="Set Duration (minutes)" 
+        	android:positiveButtonText="Save" 
+        	android:negativeButtonText="Cancel" 
+        	android:numeric="integer"
+	        android:maxLength="4"
+    	    android:gravity="center_horizontal"
+	        android:defaultValue="60" 
+        	android:icon="@drawable/duration" 
+        	android:dialogIcon="@drawable/duration" 
+        	android:key="dura" 
+        	android:dependency="calimport"/>
+    	<CheckBoxPreference 
+        	android:key="calrecur" 
+        	android:defaultValue="false" 
+        	android:title="Recurrence" 
+        	android:disableDependentsState="false" 
+        	android:summaryOn="Appointments will repeat at the frequency specified below" 
+        	android:summaryOff="If checked, appointments will repeat at a certain frequency" 
+        	android:icon="@drawable/avreplay" 
+        	android:dependency="calimport"/>
+    	<ListPreference 
+    	    android:key="calrepeat" 
+    	    android:entryValues="@array/calrepeatvalue" 
+    	    android:entries="@array/calrepeattitle" 
+    	    android:title="Frequency" 
+    	    android:defaultValue="DAILY" 
+    	    android:summary="Interval at which appointments recur" 
+    	    android:dependency="calrecur" 
+    	    android:icon="@drawable/clock"/>
+    	<ListPreference 
+    	    android:title="Privacy" 
+    	    android:defaultValue="2" 
+    	    android:entries="@array/privacy_calendar" 
+    	    android:entryValues="@array/privacy_entriescal" 
+    	    android:key="priva" 
+    	    android:summary="Public makes appointments visible to anyone with access to the calendar. Default value is Private" 
+    	    android:icon="@drawable/access" 
+    	    android:dependency="calimport" />
+    	
+    
+    </PreferenceCategory>
+</PreferenceScreen>

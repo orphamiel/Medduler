@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="false" >
+	
+    <include
+        android:id="@+id/fakeactionbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="fill"
+        layout="@layout/createbar"
+        android:windowSoftInputMode="adjustPan" />
+            
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@id/fakeactionbar"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbarThumbVertical="@drawable/scrollcolor" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="15dp" >
+
+    <TextView
+        android:id="@+id/attendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Attendee"
+        android:textColor="#727272" />
+
+    <EditText
+        android:id="@+id/nameedit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/attendance"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/customedittext"
+        android:hint="Last name"
+        android:imeOptions="flagNoExtractUi"
+        android:inputType="textCapWords|textPersonName"
+        android:paddingLeft="10dp"
+        android:width="135dp" />
+    
+        <EditText
+            android:id="@+id/nameedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/attendance"
+            android:layout_alignStart="@id/attendance"
+            android:layout_below="@id/attendance"
+            android:layout_marginLeft="2dp"
+            android:layout_toLeftOf="@id/nameedit2"
+            android:background="@drawable/customedittext"
+            android:hint="First name"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="textCapWords|textPersonName"
+            android:nextFocusDown="@id/nameedit2"
+            android:width="200dp" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/locatitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attendance"
+        android:layout_below="@id/nameedit"
+        android:layout_marginTop="10dp"
+        android:text="Location"
+        android:textColor="#727272" />
+    
+     <EditText
+         android:id="@+id/depedit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/nameedit"
+         android:layout_alignRight="@id/nameedit2"
+         android:layout_below="@id/locatitle"
+         android:layout_centerHorizontal="true"
+         android:background="@drawable/customedittext"
+         android:hint="Department"
+         android:imeOptions="flagNoExtractUi"
+         android:inputType="textCapSentences"
+         android:paddingLeft="10dp" />
+     
+     <EditText
+         android:id="@+id/locedit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/nameedit"
+         android:layout_alignRight="@id/depedit"
+         android:layout_below="@id/depedit"
+         android:layout_marginTop="5dp"
+         android:background="@drawable/customedittext"
+         android:hint="Location"
+         android:imeOptions="flagNoExtractUi"
+         android:inputType="textCapSentences"
+         android:paddingLeft="10dp"
+         android:width="250dp" />
+
+     <TextView
+         android:id="@+id/timetitle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/attendance"
+         android:layout_below="@id/locedit"
+         android:layout_marginTop="10dp"
+         android:text="Appointment Date "
+         android:textColor="#727272" />
+
+     <Button
+         android:id="@+id/datebutt"
+         style="?android:attr/spinnerStyle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignEnd="@id/nameedit"
+         android:layout_alignLeft="@id/locedit"
+         android:layout_below="@id/timetitle"
+         android:onClick="selectDate"
+         android:width="210dp" />
+     
+     <Button
+         android:id="@+id/timebutt"
+         style="?android:attr/spinnerStyle"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@id/datebutt"
+         android:layout_alignRight="@id/nameedit2"
+         android:layout_centerHorizontal="true"
+         android:layout_toRightOf="@id/datebutt"
+         android:onClick="selectTime"
+         android:width="100dp" />
+
+     <TextView
+         android:id="@+id/other"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/attendance"
+         android:layout_below="@id/datebutt"
+         android:layout_marginTop="10dp"
+         android:text="Other details"
+         android:textColor="#727272" />
+
+     <ImageButton
+         android:id="@+id/namebutt"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignRight="@id/nameedit2"
+         android:layout_below="@id/other"
+         android:layout_marginTop="5dp"
+         android:adjustViewBounds="true"
+         android:background="@drawable/contactpick"
+         android:cropToPadding="true"
+         android:maxHeight="31dp"
+         android:maxWidth="31dp"
+         android:onClick="contactpick"
+         android:scaleType="centerInside"
+         android:src="@drawable/addpers"
+         android:width="36dp"
+         android:contentDescription="@null" />
+     
+     <EditText
+         android:id="@+id/nameedit3"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/nameedit"
+         android:layout_below="@id/other"
+         android:layout_toLeftOf="@id/namebutt"
+         android:background="@drawable/customedittext"
+         android:imeOptions="flagNoExtractUi"
+         android:hint="Doctor Name"
+         android:inputType="textCapWords|textPersonName"
+         android:paddingLeft="10dp" >
+
+     </EditText>
+     
+
+     
+    <EditText
+        android:id="@+id/issuedit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/nameedit"
+        android:layout_alignRight="@id/nameedit2"
+        android:layout_below="@id/nameedit3"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/customedittext"
+        android:imeOptions="flagNoExtractUi"
+        android:hint="Issue"
+        android:inputType="textCapSentences"
+        android:paddingLeft="10dp" />
+    
+   <EditText
+       android:id="@+id/reedit"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@id/nameedit"
+       android:layout_alignRight="@id/nameedit2"
+       android:layout_below="@id/issuedit"
+       android:layout_marginTop="5dp"
+       android:background="@drawable/customedittext"
+       android:gravity="top|left"
+       android:hint="Remarks"
+       android:imeOptions="flagNoExtractUi"
+       android:inputType="textCapSentences|textMultiLine"
+       android:minLines="3"
+       android:paddingLeft="10dp"
+       android:scrollbars="vertical" />
+     
+</RelativeLayout>     
+</ScrollView>
+</RelativeLayout>

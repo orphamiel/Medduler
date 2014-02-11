@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgroundcolor" >#dddddd</color>
+  	<color name="scanbuttoncolor">#ff4444</color>
+  	<color name="lastappttext">#282828</color>
+  	<color name="holoblue">#33b5e5</color> 	
+  	<color name="border">#c6c6c6</color>  	
+  	<color name="lastapptcolor">#f5f5f5</color>
+  	<color name="lastappttitle">#ff5f5f</color>
+  	<color name="diagborder">#c6c6c6</color>
+  	<color name="clicklight">#8033b5e5</color>
+  	<color name="white">#ffffff</color>
+</resources>

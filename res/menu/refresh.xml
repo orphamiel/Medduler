@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/item9" android:title="Refresh" android:icon="@drawable/refresh" android:showAsAction="always" android:orderInCategory="100"></item>
+    <item android:id="@+id/item8" android:icon="@drawable/search" android:orderInCategory="99" android:title="Search" android:showAsAction="always"></item>
+    <item android:id="@+id/item11" android:icon="@drawable/plus" android:showAsAction="always" android:orderInCategory="98" android:title="Add new appointment"></item>
+    <item android:id="@+id/item12" android:checkable="true" android:checked="true" android:title="Show Expired"></item>
+    
+
+</menu>

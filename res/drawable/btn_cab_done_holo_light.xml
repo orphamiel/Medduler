@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+Wrote the code for highlight and original state myself so
+no longer licensed by apache despite the file name
+-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@color/clicklight" />
+    <item android:state_focused="true" android:state_enabled="true"
+        android:drawable="@color/clicklight" />
+    <item android:state_enabled="true"
+        android:drawable="@color/transparent" />
+</selector>

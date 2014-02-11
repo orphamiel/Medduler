@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarThumbVertical="@drawable/scrollcolor" >
+            
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:paddingBottom="22dp" >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/scanbuttonselect"
+        android:drawableLeft="@drawable/camera"
+        android:gravity="left|center_vertical"
+        android:height="80dp"
+        android:onClick="scanNow"
+        android:paddingLeft="47dp"
+        android:text=" Tap to Scan QR"
+        android:textColor="#f3f3f3"
+        android:textSize="24sp"
+        android:width="320dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/button1"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lastapptshapemid"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:text="Next Appointment Information"
+        android:textColor="@color/lastappttitle"
+        android:textSize="15sp"
+        android:width="238dp" />
+
+    <TextView
+        android:id="@+id/textborder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:background="@color/border"
+        android:height="1dp"
+        android:width="320dp" />
+    
+        <LinearLayout
+            android:id="@+id/textmerge"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textborder"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lastapptshapemid"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/lastappttext"
+                android:textSize="@dimen/cardnormtext"
+                android:width="320dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lastapptshapemid"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/lastappttext"
+                android:textSize="@dimen/cardnormtext"
+                android:width="320dp" />
+            
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/lastapptshapemid"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="@color/lastappttext"
+                android:textSize="@dimen/cardnormtext"
+                android:width="320dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lastapptshapemid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/lastappttext"
+        android:textSize="@dimen/cardnormtext"
+        android:width="320dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lastapptshapemid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/lastappttext"
+        android:textSize="@dimen/cardnormtext"
+        android:width="320dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lastapptshapemid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/lastappttext"
+        android:textSize="@dimen/cardnormtext"
+        android:width="320dp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lastapptshapemid"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/lastappttext"
+        android:textSize="@dimen/cardnormtext"
+        android:width="320dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/lastapptshapemid"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:text=""
+        android:textColor="@color/lastappttext"
+        android:textSize="@dimen/cardnormtext"
+        android:width="320dp" />
+
+        </LinearLayout>    
+
+    <TextView
+        android:id="@+id/imageborder2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textborder"
+        android:layout_alignTop="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/textView1"
+        android:background="@color/border"
+        android:width="1dp" />
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textborder"
+        android:layout_alignTop="@id/textView1"
+        android:layout_toRightOf="@id/imageborder2"
+        android:background="@drawable/sharebutselect"
+        android:contentDescription="@null"
+        android:onClick="refreshbutton"
+        android:padding="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/refresh2" />
+
+    <TextView
+        android:id="@+id/imageborder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textborder"
+        android:layout_alignTop="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/button2"
+        android:background="@color/border"
+        android:width="1dp" />
+
+    <ImageButton
+        android:id="@+id/button3"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/textborder"
+        android:layout_alignTop="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/imageborder"
+        android:background="@drawable/sharebutselect"
+        android:contentDescription="@null"
+        android:onClick="sharebutton"
+        android:padding="7dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/share" />
+
+</RelativeLayout>
+
+</ScrollView>

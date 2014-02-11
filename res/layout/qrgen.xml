@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="10"
+    android:scrollbarThumbVertical="@drawable/scrollcolor" >
+
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" >
+
+    		<ImageView
+    		    android:id="@+id/qrimage"
+    		    android:layout_width="250dp"
+    		    android:layout_height="250dp"
+    		    android:layout_alignParentLeft="false"
+    		    android:layout_alignParentRight="false"
+    		    android:layout_alignParentTop="true"
+    		    android:layout_centerHorizontal="true"
+    		    android:layout_marginBottom="10dp"
+    		    android:layout_marginTop="15dp"
+    		    android:clickable="true"
+    		    android:contentDescription="@null"
+    		    android:onClick="unhide" />
+
+		    <Spinner
+		        android:id="@+id/qrspinner"
+		        android:layout_width="120dp"
+		        android:layout_height="35dp"
+		        android:layout_alignRight="@id/qrimage"
+		        android:layout_below="@id/qrimage"
+		        android:entries="@array/qrspinnerarr" />
+		    
+		    <EditText
+		        android:id="@+id/qrstring"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@id/qrspinner"
+		        android:layout_alignLeft="@id/qrimage"
+		        android:layout_alignTop="@id/qrspinner"
+		        android:layout_toLeftOf="@id/qrspinner"
+		        android:background="@drawable/customedittext"
+		        android:ems="10"
+		        android:imeOptions="flagNoExtractUi"
+		        android:inputType="textCapWords" >
+		
+		        <requestFocus />
+		    </EditText>
+		
+		    <Button
+		        android:id="@+id/qrmakebutt"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@id/qrimage"
+		        android:layout_alignRight="@id/qrimage"
+		        android:layout_below="@id/qrstring"
+		        android:layout_marginTop="15dp"
+		        android:background="@drawable/scanbuttonselect"
+		        android:onClick="hideedit"
+		        android:text="Hide Buttons"
+		        android:textColor="@color/white" />
+
+	</RelativeLayout>
+</ScrollView>

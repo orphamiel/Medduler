@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sharebutselect"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="7dp"
+    android:paddingRight="10dp" >
+
+    <TextView
+        android:id="@+id/dayshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/daylayer"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textColor="#f3f3f3"
+        android:textSize="12sp"
+        android:width="74dp" />
+
+     <TextView
+         android:id="@+id/dateshow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/dayshow"
+         android:layout_below="@id/dayshow"
+         android:background="@drawable/datelayer"
+         android:gravity="center_vertical|center_horizontal"
+         android:paddingTop="2dp"
+         android:textColor="#ff4444"
+         android:textSize="24sp"
+         android:width="74dp" />
+
+     <TextView
+         android:id="@+id/monthshow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/dayshow"
+         android:layout_below="@id/dateshow"
+         android:background="@drawable/monthlayer"
+         android:gravity="center_vertical|center_horizontal"
+         android:paddingBottom="5dp"
+         android:textColor="#000000"
+         android:textSize="12sp"
+         android:width="74dp" />
+
+     <TextView
+         android:id="@+id/timeshow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_alignTop="@id/dayshow"
+         android:layout_toRightOf="@id/dayshow"
+         android:textColor="#000000"
+         android:textSize="18sp" />
+
+     <TextView
+         android:id="@+id/locateshow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/timeshow"
+         android:layout_below="@id/timeshow"
+         android:textColor="#000000"
+         android:textSize="@dimen/apptrowtext" />
+
+     <TextView
+         android:id="@+id/issueshow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/timeshow"
+         android:layout_below="@id/locateshow"
+         android:textColor="#000000"
+         android:textSize="@dimen/apptrowtext" />
+
+     <TextView
+         android:id="@+id/remarkshow"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@id/timeshow"
+         android:layout_below="@id/issueshow"
+         android:textColor="#000000"
+         android:textSize="@dimen/apptrowtext" />
+
+     <TextView
+         android:id="@+id/noappt"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:enabled="false"
+         android:gravity="center_vertical|center_horizontal"
+         android:paddingBottom="100dp"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+         android:textColor="#000000"
+         android:textSize="16dp"
+         android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <string-array name="country_codes">
+    <item>-</item>
+    <item>AR</item>
+    <item>AU</item>
+    <item>BR</item>
+    <item>BG</item>
+    <item>CA</item>
+    <item>CH</item>
+    <item>CN</item>
+    <item>CZ</item>
+    <item>DE</item>
+    <item>DK</item>
+    <item>ES</item>
+    <item>FI</item>
+    <item>FR</item>
+    <item>GB</item>
+    <item>GR</item>
+    <item>HU</item>
+    <item>ID</item>
+    <item>IT</item>
+    <item>JP</item>
+    <item>KR</item>
+    <item>NL</item>
+    <item>PL</item>
+    <item>PT</item>
+    <item>RU</item>
+    <item>SE</item>
+    <item>SK</item>
+    <item>SI</item>
+    <item>TR</item>
+    <item>TW</item>
+    <item>US</item>
+  </string-array>
+  <string-array name="preferences_front_light_values">
+    <item>ON</item>
+    <item>AUTO</item>
+    <item>OFF</item>
+  </string-array>
+  <string-array name="preferences_front_light_options">
+    <item>@string/preferences_front_light_on</item>
+    <item>@string/preferences_front_light_auto</item>
+    <item>@string/preferences_front_light_off</item>
+  </string-array>
+  <string-array name="privacy_calendar">
+      <item>Public</item>
+      <item >Private</item>
+  </string-array>
+  <string-array name="privacy_entriescal">
+      <item >3</item>
+      <item>2</item>
+  </string-array>
+  <string-array name="calrepeatvalue">
+      <item >DAILY</item>
+      <item >WEEKLY</item>
+      <item >MONTHLY</item>
+      <item >YEARLY</item>
+  </string-array>
+  <string-array name="calrepeattitle">
+      <item >Daily</item>
+      <item >Weekly</item>
+      <item >Monthly</item>
+      <item >Yearly</item>
+  </string-array>
+  <string-array name="qrspinnerarr">
+      <item >QR Code</item>
+      <item >Code128</item>
+  </string-array>
+  <string-array name="calreminderarr">
+      <item >1 hour</item>
+      <item >2 hours</item>
+      <item >3 hours</item>
+      <item >12 hours</item>
+      <item >24 hours</item>
+      <item >2 days</item>
+      <item >3 days</item>
+      <item >1 week</item>
+  </string-array>
+  <string-array name="calremarr">
+      <item >60</item>
+      <item >120</item>
+      <item >180</item>
+      <item >720</item>
+      <item >1440</item>
+      <item >2880</item>
+      <item >4320</item>
+      <item >10080</item>
+  </string-array>
+  <string-array name="caldefaultrem">
+      <item >60</item>
+      <item >1440</item>
+  </string-array>
+</resources>
